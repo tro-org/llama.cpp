@@ -215,6 +215,8 @@ function gg_run {
 # ctest_debug
 
 function gg_run_ctest_debug {
+    cat /sys/fs/cgroup/cpuset.cpus
+
     cd ${SRC}
 
     rm -rf build-ci-debug && mkdir build-ci-debug && cd build-ci-debug
